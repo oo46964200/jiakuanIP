@@ -87,13 +87,6 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 07 - xiaohe
-  type: ss
-  server: 172.105.39.124
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -105,7 +98,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 04 - xiaohe
   - 🇮🇳 印度 (India) 05 - xiaohe
   - 🇮🇳 印度 (India) 06 - xiaohe
-  - 🇮🇳 印度 (India) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -117,6 +109,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 04 - xiaohe
   - 🇮🇳 印度 (India) 05 - xiaohe
   - 🇮🇳 印度 (India) 06 - xiaohe
-  - 🇮🇳 印度 (India) 07 - xiaohe
 rules:
 - MATCH,PROXIES
